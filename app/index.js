@@ -26,6 +26,11 @@ const Home=()=>{
         <Text>Home</Text>
       </Pressable>
     </Link>
+    <Link href={{pathname: "/beginMonitoring"}} asChild>
+        <Pressable>
+            <Text>Start The Monitoring Process</Text>
+        </Pressable>
+    </Link>
         </View>
         </ScrollView>
     </SafeAreaView>);
