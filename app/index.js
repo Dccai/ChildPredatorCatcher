@@ -1,6 +1,7 @@
 import { View,Text, ScrollView, SafeAreaView,Button,TouchableOpacity,Image,Pressable} from "react-native";
 import { Stack,useRouter,Link } from "expo-router";
 import { useState } from "react";
+import "expo-router/entry";
 function HeadButton(props){
 
 return (

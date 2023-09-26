@@ -8,6 +8,20 @@
       "expo-router"
     ],
     "name": "ChildPredatorCatcher",
-    "slug": "ChildPredatorCatcher"
+    "slug": "ChildPredatorCatcher",
+    "android": {
+      "package": "io.ieo.fef"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a762948f-2dcd-4c4e-b392-ac55471ab7fe"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "io.ieo.fef"
+    }
   }
 }
