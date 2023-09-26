@@ -2,6 +2,7 @@ import { View,Text, ScrollView, SafeAreaView,Button,TouchableOpacity,Image,Press
 import { Stack,useRouter,Link } from "expo-router";
 import { useState } from "react";
 function HeadButton(props){
+
 return (
 <Button onPress={()=>{console.log('hi')}} title={props.name}></Button>
 );
@@ -9,6 +10,7 @@ return (
 const Home=()=>{
     let [score,increaseScore]=useState(0);
     const router=useRouter();
+ 
     return( <SafeAreaView style={{flex:1,backgroundColor:"aliceblue"}}>
         <Stack.Screen options={{headerStyle:{backgroundColor:'red'},headerShadowVisible:true,
         headerLeft:()=>(<HeadButton name="Login"/>), headerRight:()=>(<HeadButton name="Home"/>),headerTitle:""
@@ -26,9 +28,9 @@ const Home=()=>{
         <Text>Home</Text>
       </Pressable>
     </Link>
-    <Link href={{pathname: "/beginMonitoring"}} asChild>
+    <Link href={{pathname: "/reportPotentialThreats"}} asChild>
         <Pressable>
-            <Text>Start The Monitoring Process</Text>
+            <Text>Report Suspicious Behaviour</Text>
         </Pressable>
     </Link>
         </View>
